@@ -22,5 +22,6 @@ Route::get('register', 'HomeController@showRegister');
 Route::post('register','HomeController@doRegister');
 
 
-
+// route to show admin
+Route::get('admin', 'HomeController@showAdmin');
 ?>

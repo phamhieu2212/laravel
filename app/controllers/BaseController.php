@@ -6,10 +6,13 @@ class BaseController extends Controller {
 	 *
 	 * @return void
 	 */
-	public function showCategory()
+	//----------------Admin-------------------//
+	public function showAdmin()
 	{
-		return View::make('category');
+
+		return View::make('admin');
 	}
+
 
 	public function showAbout()
 	{

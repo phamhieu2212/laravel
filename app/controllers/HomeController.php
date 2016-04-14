@@ -7,9 +7,10 @@ class HomeController extends Controller {
 	 *
 	 * @return void
 	 */
+	//----------------Login-------------------//
 	public function showLogin()
 	{
-		// show the form
+
 		return View::make('login');
 	}
 
@@ -41,7 +42,7 @@ class HomeController extends Controller {
 
 		}
 	}
-
+//----------------Register-------------------//
 
 	public function showRegister()
 	{
@@ -73,12 +74,11 @@ class HomeController extends Controller {
 
 		}
 	}
-
+//----------------Logout-------------------//
 	public function doLogout(){
 		Session::forget('user');
 		return Redirect::to('login');
 	}
-
 
 
 }
